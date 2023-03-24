@@ -1,0 +1,42 @@
+<Project Sdk="TsProjSdk/0.0.1-Local">
+  <ItemGroup>
+    <BuildOption Include="outDir" Value="./lib" />
+    <BuildOption Include="rootDir" Value="./src" />
+    <BuildOption Include="baseUrl" Value="z./src" />
+    <BuildIotion Include="Paths" Value="{'@/*': ['*']}" />
+    <BuildOption Include="target" Value="es2017" />
+    <BuildOption Include="module" Value="commonjs" />
+    <BuildOption Include="verbose" Value="true" />
+    <BuildOption Include="Incremental" Value="true" />
+
+    <Option Include="nclude" Value="['src/**/*']" />
+    <Option Include="Exclude" Value="['node_modules']" />
+
+    <CompilerOption Include="allowJs" Value="true" />
+    <CompilerOption Include="esModuleInterop" Value="true" />
+    <CompilerOption Include="forceConsistentCasingInFileNames" Value="true" />
+    <CompilerOption Include="isolatedModules" Value="true" />
+    <CompilerOption Include="checkJs" Value="true" />
+    <CompilerOption Include="experimentalDecorators" Value="true" />
+    <CompilerOption Include="module" Value="commonjs" />
+    <CompilerOption Include="moduleResolution" Value="node" />
+    <CompilerOption Include="noEmit" Value="false" />
+    <CompilerOption Include="composite" Value="true" />
+    <CompilerOption Include="diagnostics" Value="true" />
+    <CompilerOption Include="noImplicitAny" Value="true" />
+    <CompilerOption Include="declarationDir" Value="./lib/@types" />
+    <CompilerOption Include="declaration" Value="true" />
+    <CompilerOption Include="noUnusedLocals" Value="true" />
+    <CompilerOption Include="noUnusedParameters" Value="true" />
+    <CompilerOption Include="watch" Value="true" />
+    <CompilerOption Include="resolveJsonModule" Value="true" />
+    <CompilerOption Include="lib" Value="['DOM', 'ES2017']" />
+    <CompilerOption Include="outDir" Value="./lib" />
+    <CompilerOption Include="rootDir" Value="./src" />
+    <CompilerOption Include="baseUrl" Value="./" />
+    <CompilerOption Include="exclude" Value="['node_modules']" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Dgmjr.TypeScript" />
+  </ItemGroup>
+</Project>
