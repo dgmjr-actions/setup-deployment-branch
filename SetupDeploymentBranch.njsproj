@@ -2,14 +2,14 @@
   <ItemGroup>
     <BuildOption Include="outDir" Value="./lib" />
     <BuildOption Include="rootDir" Value="./src" />
-    <BuildOption Include="baseUrl" Value="z./src" />
-    <BuildIotion Include="Paths" Value="{'@/*': ['*']}" />
+    <BuildOption Include="baseUrl" Value="./src" />
+    <BuildOption Include="Paths" Value="{'@/*': ['*']}" />
     <BuildOption Include="target" Value="es2017" />
     <BuildOption Include="module" Value="commonjs" />
     <BuildOption Include="verbose" Value="true" />
     <BuildOption Include="Incremental" Value="true" />
 
-    <Option Include="nclude" Value="['src/**/*']" />
+    <Option Include="include" Value="['src/**/*']" />
     <Option Include="Exclude" Value="['node_modules']" />
 
     <CompilerOption Include="allowJs" Value="true" />

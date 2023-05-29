@@ -1,51 +1,12 @@
 {
+    "extends": "../tsconfig.base.json",
     "buildOptions": {
-        "outDir": "./lib",
-        "rootDir": "./src",
-        "baseUrl": "./src",
-        "paths": {
-            "@/*": ["*"]
-        },
-        "target": "es2017",
-        "module": "commonjs",
-        "verbose": true,
-        "incremental": true
     },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
-    ""
-    "compileOnSave": true,
     "compilerOptions": {
-        "allowJs": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "isolatedModules": true,
-        "checkJs": true,
-        "experimentalDecorators": true,
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "noEmit": false,
-        "composite": true,
-        "diagnostics": true,
-        "noImplicitAny": true,
-        "declarationDir": "./lib/@types",
-        "declaration": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "watch": true,
-        "resolveJsonModule": true,
-        "lib": ["DOM", "ES2017"],
-        "outDir": "./lib",
+        "baseUrl": "./src",
         "rootDir": "./src",
-        "baseUrl": "./",
-        "exclude": ["node_modules"]
-    }
-
-
-
-
+        "outDir": "./lib"
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": ["./node_modules", "./lib"]
 }
